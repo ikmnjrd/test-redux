@@ -1,0 +1,12 @@
+## npm modules
+node_modules
+
+## build files
+# public
+
+
+## Mac system file
+.DS_Store
+
+## idea
+.idea
