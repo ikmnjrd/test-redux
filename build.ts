@@ -4,7 +4,7 @@ const path = require('path')
 
 const options = {
   define: { 'process.env.NODE_ENV': process.env.NODE_ENV },
-  entryPoints: [path.resolve(__dirname, 'src/App.jsx')],
+  entryPoints: [path.resolve(__dirname, 'src/index.jsx')],
   minify: argv[2] === 'production',
   bundle: true,
   target: 'es2016',

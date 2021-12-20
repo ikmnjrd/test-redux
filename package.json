@@ -7,17 +7,20 @@
     "build-test": "esbuild src/App.jsx --bundle --outfile=out2.js --minify --sourcemap --target=chrome58,firefox57,safari11,edge16",
     "watch": "run-p watch:*",
     "watch:build": "sh -exec 'NODE_ENV=\\\"development\\\" node ./build.ts'",
-    "watch:serve": "wait-on public/App.js && reload -d public -b"
+    "watch:serve": "wait-on public/index.js && reload -d public -b"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "esbuild": "^0.14.5",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.1",
+    "@types/react-redux": "^7.1.20",
     "npm-run-all": "^4.1.5",
     "reload": "^3.2.0",
     "typescript": "^4.5.4",
