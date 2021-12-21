@@ -11,7 +11,7 @@ const Connect: React.VFC = () => {
   const decrease = () => {
     dispatch({ type: "DECREASE_COUNT" });
   };
-  console.log("count1");
+  console.log("count2");
   
   return (
     <>
@@ -21,7 +21,5 @@ const Connect: React.VFC = () => {
     </>
   );
 }
-
-
 
 export default Connect;

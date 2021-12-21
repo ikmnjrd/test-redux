@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-test": "esbuild src/App.jsx --bundle --outfile=out2.js --minify --sourcemap --target=chrome58,firefox57,safari11,edge16",
+    "build": "NODE_ENV=\\\"production\\\" ts-node ./build.ts",
     "watch": "run-p watch:*",
-    "watch:build": "sh -exec 'NODE_ENV=\\\"development\\\" node ./build.ts'",
+    "watch:build": "sh -exec 'NODE_ENV=\\\"development\\\" ts-node ./build.ts'",
     "watch:serve": "wait-on public/index.js && reload -d public -b"
   },
   "author": "",
@@ -20,9 +20,11 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.1",
+    "@types/react-dom": "^17.0.11",
     "@types/react-redux": "^7.1.20",
     "npm-run-all": "^4.1.5",
     "reload": "^3.2.0",
+    "ts-node": "^10.4.0",
     "typescript": "^4.5.4",
     "wait-on": "^6.0.0"
   }
