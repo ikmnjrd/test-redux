@@ -2,8 +2,10 @@
 node_modules
 
 ## build files
-# public
-
+public
+!public/index.html
+!public/manifest.json
+!public/robots.txt
 
 ## Mac system file
 .DS_Store
